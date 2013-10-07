@@ -1,0 +1,239 @@
+title: Architecture for large scale backbone applications
+author: Jean Carlos Meninno & Jorge Dias
+description: Managing complexity with backbone applications
+date: 2013-10-11
+
+!SLIDE
+
+h1. Architecture for large scale backbone applications
+
+h1. About us
+
+!SLIDE
+
+h2. Jean Carlos Meninno
+
+h3. Frontend developer at XING
+
+* Twitter: "@eth0lo":http://twitter.com/eth0lo
+* Github: "@eth0lo":http://github.com/eth0lo
+* Blog: "meninno.com":http://meninno.com
+
+!SLIDE
+
+h2. Jorge Dias
+
+h3. Tech lead developer at XING
+
+* Twitter: "dias_jorge":http://twitter.com/dias_jorge
+* Github: "@diasjorge":http://github.com/diasjorge
+* Blog: "mrdias.com":http://mrdias.com
+
+h1. A little bit of history
+
+!SLIDE
+
+h2. Browser wars
+
+* Incompatible versions
+* Global space pollution
+* etc
+
+!SLIDE
+
+h2. And then there was jQuery
+
+* Jquery plugins
+* Events
+* All by hand
+
+!SLIDE
+
+h2. HELL
+
+!SLIDE
+
+h2. MV* - Backbone and friends
+
+* More structured applications
+* Localized event handling
+* etc
+
+h1. Backbone
+
+h2. The first attempt
+
+!SLIDE
+
+h2. The good parts
+
+!SLIDE
+
+h2. Models and collections
+
+* Restful interface
+* Data and presentation are separated
+* Lifecycle events
+
+!SLIDE
+
+h2. Views
+
+* Easy handling of dom events
+* React to model/collection events
+
+!SLIDE
+
+h2. Router
+
+* Url handling and structuring
+
+!SLIDE
+
+h2. History
+
+* No full page reloads
+* Push state (where available)
+* Back button keeps working
+
+!SLIDE
+
+h2. Others
+
+* Not opinionated
+* Flexibility
+* underscore integration
+* jQuery integration
+* Fits into existent projects
+* It's a small library
+
+!SLIDE
+
+h2. The messy parts
+
+!SLIDE
+
+h2. Zombies
+
+* Events
+* Views
+
+!SLIDE
+
+h2. Boilerplate
+
+* Lots of code for basic stuff
+
+!SLIDE
+
+h2. Others
+
+* Is not a framework
+* Not opinionated
+* Structure? What is that?
+* Controllers? Have you heard of those?
+* Too much rope to hang yourself
+
+
+h1. The Challenge
+
+Rewrite the whole frontend in 4 months.<br/>
+Previous version was 1.5 years in development.
+
+!SLIDE
+
+h2. The constraints
+
+* Don't screw up by learning another framework
+* Lots of time preassure
+* 80% of team was backend
+
+
+!SLIDE
+
+h2. Alternatives Evaluation
+
+* Marionette
+* Chaplin
+* Thorax
+
+h1. Marionette JS
+
+h2. What makes Marionette a good choice?
+
+!SLIDE
+
+h2. Dancing applications are awesome
+
+!SLIDE
+
+h2. Documentation
+
+!SLIDE
+
+h2. Clean understandable code
+
+!SLIDE
+
+h2. Memory and events management
+
+* Good bye zombies
+
+!SLIDE
+
+h2. Specialized views
+
+* Layouts
+* Region Manager
+* Collection/Composite Views
+* Item Views
+
+!SLIDE
+
+h2. Controllers
+
+!SLIDE
+
+h2. Event buses
+
+
+h1. Conventions
+
+!SLIDE
+
+h2. Composite applications
+
+!SLIDE
+
+h2. Structure
+
+!SLIDE
+
+h2. XTM Examples
+
+!SLIDE
+
+h2. Data layer
+
+* Models and collections contained in one place
+* Events all the way
+* Everything is a promise
+
+!SLIDE
+
+h2. Core specialized classes
+
+* Don't try to be GOD (Going Overboard with DRY)
+* Patterns, patterns and more patterns
+
+!SLIDE
+
+h2. Directory structure
+
+* Apps
+* Restful structure
+* Lib
+* Entities
+* Templates
+
+h1. Q & A
