@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Architecture for large scale backbone applications</title>
+
+		<meta name="description" content="Managing complexity with backbone applications">
+		<meta name="author" content="Jean Carlos Meninno & Jorge Dias">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="reveal/css/reveal.min.css">
+		<link rel="stylesheet" href="reveal/css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+          <div class="slides">
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+
+
+                </section>
+              
+            
+              
+                <section "">
+                  <!-- _S9SLIDE_ -->
+<h1>Architecture for large scale backbone applications</h1>
+
+
+                </section>
+              
+            
+              
+                <section "">
+                  <!-- _S9SLIDE_ -->
+<h1>About us</h1>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Jorge Dias</h2>
+<h3>Tech lead developer at XING</h3>
+<ul>
+	<li>Twitter: <a href="http://twitter.com/dias_jorge">dias_jorge</a></li>
+	<li>Github: <a href="http://github.com/diasjorge">@diasjorge</a></li>
+	<li>Blog: <a href="http://mrdias.com">mrdias.com</a></li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Jean Carlos Meninno</h2>
+<h3>Frontend developer at XING</h3>
+<ul>
+	<li>Twitter: <a href="http://twitter.com/eth0lo">@eth0lo</a></li>
+	<li>Github: <a href="http://github.com/eth0lo">@eth0lo</a></li>
+	<li>Blog: <a href="http://meninno.com">meninno.com</a></li>
+</ul>
+
+
+                </section>
+              
+            
+              
+                <section "">
+                  <!-- _S9SLIDE_ -->
+<h1>The good old days</h1>
+<h2>Not really</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Browser wars</h2>
+<ul>
+	<li>Incompatible versions</li>
+	<li>Global space pollution</li>
+	<li>Javascript events in the html</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>jQuery and others</h2>
+<ul>
+	<li>Browser inconsistencies abstracted</li>
+	<li>Lots of plugins but often incompatible</li>
+	<li>Ad-hoc AJAX handling</li>
+	<li>Lack of client side templating</li>
+</ul>
+
+
+                </section>
+              
+            
+              
+                <section "">
+                  <!-- _S9SLIDE_ -->
+<h1>Modern development</h1>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>MV* &#8211; Backbone and friends</h2>
+<ul>
+	<li>Modular structure</li>
+	<li>Communication through events</li>
+	<li>Consistent interface to backend</li>
+</ul>
+
+
+                </section>
+              
+            
+              
+                <section "">
+                  <!-- _S9SLIDE_ -->
+<h1>Backbone</h1>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>The good parts</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Models and collections</h2>
+<ul>
+	<li>Restful interface</li>
+	<li>Data and presentation are separated</li>
+	<li>Lifecycle events</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Views</h2>
+<ul>
+	<li>Easy handling of dom events</li>
+	<li>React to model/collection events</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>History</h2>
+<ul>
+	<li>No full page reloads</li>
+	<li>Push state (where available)</li>
+	<li>Back button keeps working</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Others</h2>
+<ul>
+	<li>Not opinionated</li>
+	<li>underscore integration</li>
+	<li>jQuery integration</li>
+	<li>Fits into existent projects</li>
+	<li>Small footprint</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>The messy parts</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Zombies</h2>
+<ul>
+	<li>Events</li>
+	<li>Views</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Not a framework</h2>
+<ul>
+	<li>Setup your own conventions</li>
+	<li>No clear way to structure your app</li>
+	<li>Lacks specialized views</li>
+	<li>Make your own framework on top</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Others</h2>
+<ul>
+	<li>No controllers</li>
+	<li>Mixed concerns between views and models</li>
+	<li>Huge routers</li>
+</ul>
+
+
+                </section>
+              
+            
+              
+                <section "">
+                  <!-- _S9SLIDE_ -->
+<h1>The Challenge</h1>
+<p>Rewrite the whole frontend in 4 months.<br/>
+Previous version was 1.5 years in development.</p>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>The constraints</h2>
+<ul>
+	<li>Don&#8217;t screw up by learning another framework</li>
+	<li>Lots of time preassure</li>
+	<li>80% of team was backend</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Alternatives Evaluation</h2>
+<ul>
+	<li>Marionette</li>
+	<li>Chaplin</li>
+	<li>Thorax</li>
+</ul>
+
+
+                </section>
+              
+            
+              
+                <section "">
+                  <!-- _S9SLIDE_ -->
+<h1>Marionette JS</h1>
+<h2>What makes Marionette a good choice?</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Dancing applications are awesome</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Documentation</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Clean understandable code</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Memory and events management</h2>
+<ul>
+	<li>Good bye zombies</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Specialized views</h2>
+<ul>
+	<li>Layouts</li>
+	<li>Region Manager</li>
+	<li>Collection/Composite Views</li>
+	<li>Item Views</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Controllers</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Event buses</h2>
+
+
+                </section>
+              
+            
+              
+                <section "">
+                  <!-- _S9SLIDE_ -->
+<h1>Conventions</h1>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Composite applications</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Structure</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>XTM Examples</h2>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Data layer</h2>
+<ul>
+	<li>Models and collections contained in one place</li>
+	<li>Events all the way</li>
+	<li>Everything is a promise</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Core specialized classes</h2>
+<ul>
+	<li>Don&#8217;t try to be GOD (Going Overboard with DRY)</li>
+	<li>Patterns, patterns and more patterns</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Directory structure</h2>
+<ul>
+	<li>Apps</li>
+	<li>Restful structure</li>
+	<li>Lib</li>
+	<li>Entities</li>
+	<li>Templates</li>
+</ul>
+
+
+                </section>
+              
+            
+              
+                <section "">
+                  <!-- _S9SLIDE_ -->
+<h1>Q &amp; A</h1>
+                </section>
+              
+            
+          </div>
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+//					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+//					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'reveal/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

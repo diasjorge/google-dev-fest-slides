@@ -11,16 +11,6 @@ h1. About us
 
 !SLIDE
 
-h2. Jean Carlos Meninno
-
-h3. Frontend developer at XING
-
-* Twitter: "@eth0lo":http://twitter.com/eth0lo
-* Github: "@eth0lo":http://github.com/eth0lo
-* Blog: "meninno.com":http://meninno.com
-
-!SLIDE
-
 h2. Jorge Dias
 
 h3. Tech lead developer at XING
@@ -29,7 +19,21 @@ h3. Tech lead developer at XING
 * Github: "@diasjorge":http://github.com/diasjorge
 * Blog: "mrdias.com":http://mrdias.com
 
-h1. A little bit of history
+!SLIDE
+
+h2. Jean Carlos Meninno
+
+h3. Frontend developer at XING
+
+* Twitter: "@eth0lo":http://twitter.com/eth0lo
+* Github: "@eth0lo":http://github.com/eth0lo
+* Blog: "meninno.com":http://meninno.com
+
+
+h1. The good old days
+
+h2. Not really
+
 
 !SLIDE
 
@@ -37,31 +41,28 @@ h2. Browser wars
 
 * Incompatible versions
 * Global space pollution
-* etc
+* Javascript events in the html
 
 !SLIDE
 
-h2. And then there was jQuery
+h2. jQuery and others
 
-* Jquery plugins
-* Events
-* All by hand
+* Browser inconsistencies abstracted
+* Lots of plugins but often incompatible
+* Ad-hoc AJAX handling
+* Lack of client side templating
 
-!SLIDE
-
-h2. HELL
+h1. Modern development
 
 !SLIDE
 
 h2. MV* - Backbone and friends
 
-* More structured applications
-* Localized event handling
-* etc
+* Modular structure
+* Communication through events
+* Consistent interface to backend
 
 h1. Backbone
-
-h2. The first attempt
 
 !SLIDE
 
@@ -84,12 +85,6 @@ h2. Views
 
 !SLIDE
 
-h2. Router
-
-* Url handling and structuring
-
-!SLIDE
-
 h2. History
 
 * No full page reloads
@@ -101,11 +96,10 @@ h2. History
 h2. Others
 
 * Not opinionated
-* Flexibility
 * underscore integration
 * jQuery integration
 * Fits into existent projects
-* It's a small library
+* Small footprint
 
 !SLIDE
 
@@ -120,19 +114,20 @@ h2. Zombies
 
 !SLIDE
 
-h2. Boilerplate
+h2. Not a framework
 
-* Lots of code for basic stuff
+* Setup your own conventions
+* No clear way to structure your app
+* Lacks specialized views
+* Make your own framework on top
 
 !SLIDE
 
 h2. Others
 
-* Is not a framework
-* Not opinionated
-* Structure? What is that?
-* Controllers? Have you heard of those?
-* Too much rope to hang yourself
+* No controllers
+* Mixed concerns between views and models
+* Huge routers
 
 
 h1. The Challenge
