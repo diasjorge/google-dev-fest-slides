@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="reveal/css/reveal.min.css">
-		<link rel="stylesheet" href="reveal/css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="reveal/css/theme/serif.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
@@ -28,6 +28,8 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+
+        <link rel="stylesheet" href="backbone.css">
 	</head>
 
 	<body>
@@ -92,7 +94,7 @@
               
                 <section "">
                   <!-- _S9SLIDE_ -->
-<h1>The good old days</h1>
+<h1>The good <br/>old days</h1>
 <h2>Not really</h2>
 
                 </section>
@@ -129,7 +131,7 @@
               
                 <section "">
                   <!-- _S9SLIDE_ -->
-<h1>Modern development</h1>
+<h1>Modern <br/>development</h1>
 
                 </section>
               
@@ -144,14 +146,13 @@
 	<li>Consistent interface to backend</li>
 </ul>
 
-
                 </section>
               
             
               
                 <section "">
-                  <!-- _S9SLIDE_ -->
-<h1>Backbone</h1>
+                  <p><!-- _S9SLIDE_  --></p>
+<p><img src="images/backbone.png" class="no-border"/></p>
 
                 </section>
               
@@ -229,6 +230,15 @@
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
 <h2>Zombies</h2>
+<p><img src="images/zombies.jpg" alt="" /></p>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Types of zombies</h2>
 <ul>
 	<li>Events</li>
 	<li>Views</li>
@@ -339,9 +349,8 @@ Previous version was 1.5 years in development.</p>
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
 <h2>Memory and events management</h2>
-<ul>
-	<li>Good bye zombies</li>
-</ul>
+<p><img src="images/zombie-buster.png" alt="" /></p>
+<p><small>Good bye zombies</small></p>
 
                 </section>
               
@@ -372,6 +381,42 @@ Previous version was 1.5 years in development.</p>
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
 <h2>Event buses</h2>
+<ul>
+	<li>Commands</li>
+	<li>Requests</li>
+	<li>Pub/sub</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>App routers</h2>
+<ul>
+	<li>Router composition</li>
+	<li>Router as configuration</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Example</h2>
+<pre><code class="javascript">someController = {
+  someMethod: function(){ /*...*/ }
+};
+
+Backbone.Marionette.AppRouter.extend({
+  controller: someController
+  appRoutes: {
+    "foo": "someMethod"
+  }
+});
+</code></pre>
 
 
                 </section>
@@ -404,7 +449,7 @@ Previous version was 1.5 years in development.</p>
               
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
-<h2>Structure</h2>
+<h2>Real Examples</h2>
 
                 </section>
               
@@ -412,7 +457,38 @@ Previous version was 1.5 years in development.</p>
               
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
-<h2>XTM Examples</h2>
+<p><img src="images/search.jpg" class="half"/></p>
+<ol>
+ <li class="fragment">User clicks on facet</li>
+ <li class="fragment">View triggers event</li>
+ <li class="fragment">Controller responds updating the search</li>
+</ol>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<p><img src="images/search.jpg" class="half"/></p>
+<ol>
+ <li class="fragment">User clicks on Profile</li>
+ <li class="fragment">View triggers event</li>
+ <li class="fragment">Controller executes command to navigate</li>
+</ol>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<p><img src="images/profile.jpg" class="half"/></p>
+<ol>
+ <li class="fragment">Profiles app handles the command</li>
+ <li class="fragment">Profiles app initializes controller</li>
+ <li class="fragment">Controller requests profile model and renders the views</li>
+</ol>
 
                 </section>
               
@@ -434,10 +510,8 @@ Previous version was 1.5 years in development.</p>
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
 <h2>Core specialized classes</h2>
-<ul>
-	<li>Don&#8217;t try to be GOD (Going Overboard with DRY)</li>
-	<li>Patterns, patterns and more patterns</li>
-</ul>
+<p><img src="images/patterns.jpg" alt="" /></p>
+<p>Patterns, patterns and more patterns</p>
 
                 </section>
               
@@ -446,6 +520,7 @@ Previous version was 1.5 years in development.</p>
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
 <h2>Directory structure</h2>
+<p style="float:left;"><img src="images/file_system.png" alt="" /></p>
 <ul>
 	<li>Apps</li>
 	<li>Restful structure</li>

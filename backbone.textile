@@ -30,7 +30,7 @@ h3. Frontend developer at XING
 * Blog: "meninno.com":http://meninno.com
 
 
-h1. The good old days
+h1. The good <br/>old days
 
 h2. Not really
 
@@ -52,7 +52,7 @@ h2. jQuery and others
 * Ad-hoc AJAX handling
 * Lack of client side templating
 
-h1. Modern development
+h1. Modern <br/>development
 
 !SLIDE
 
@@ -62,7 +62,9 @@ h2. MV* - Backbone and friends
 * Communication through events
 * Consistent interface to backend
 
-h1. Backbone
+!SLIDE
+
+<img src="images/backbone.png" class="no-border"/>
 
 !SLIDE
 
@@ -108,6 +110,12 @@ h2. The messy parts
 !SLIDE
 
 h2. Zombies
+
+!images/zombies.jpg!
+
+!SLIDE
+
+h2. Types of zombies
 
 * Events
 * Views
@@ -172,7 +180,9 @@ h2. Clean understandable code
 
 h2. Memory and events management
 
-* Good bye zombies
+!images/zombie-buster.png!
+
+<small>Good bye zombies</small>
 
 !SLIDE
 
@@ -191,6 +201,32 @@ h2. Controllers
 
 h2. Event buses
 
+* Commands
+* Requests
+* Pub/sub
+
+!SLIDE
+
+h2. App routers
+
+* Router composition
+* Router as configuration
+
+!SLIDE
+
+h2. Example
+
+<pre><code class="javascript">someController = {
+  someMethod: function(){ /*...*/ }
+};
+
+Backbone.Marionette.AppRouter.extend({
+  controller: someController
+  appRoutes: {
+    "foo": "someMethod"
+  }
+});
+</code></pre>
 
 h1. Conventions
 
@@ -204,11 +240,38 @@ h2. Composite applications
 
 !SLIDE
 
-h2. Structure
+h2. Real Examples
 
 !SLIDE
 
-h2. XTM Examples
+<img src="images/search.jpg" class="half"/>
+
+<ol>
+ <li class="fragment">User clicks on facet</li>
+ <li class="fragment">View triggers event</li>
+ <li class="fragment">Controller responds updating the search</li>
+</ol>
+
+!SLIDE
+
+<img src="images/search.jpg" class="half"/>
+
+<ol>
+ <li class="fragment">User clicks on Profile</li>
+ <li class="fragment">View triggers event</li>
+ <li class="fragment">Controller executes command to navigate</li>
+</ol>
+
+!SLIDE
+
+<img src="images/profile.jpg" class="half"/>
+
+<ol>
+ <li class="fragment">Profiles app handles the command</li>
+ <li class="fragment">Profiles app initializes controller</li>
+ <li class="fragment">Controller requests profile model and renders the views</li>
+</ol>
+
 
 !SLIDE
 
@@ -222,12 +285,15 @@ h2. Data layer
 
 h2. Core specialized classes
 
-* Don't try to be GOD (Going Overboard with DRY)
-* Patterns, patterns and more patterns
+!images/patterns.jpg!
+
+Patterns, patterns and more patterns
 
 !SLIDE
 
 h2. Directory structure
+
+!<images/file_system.png!
 
 * Apps
 * Restful structure

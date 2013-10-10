@@ -1,0 +1,11 @@
+.reveal section img.half {
+    width: 75%;
+}
+
+section .right {
+    float: right;
+}
+
+section .left {
+    float: left;
+}
