@@ -28,8 +28,7 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-
-        <link rel="stylesheet" href="backbone.css">
+                <link rel="stylesheet" href="backbone.css">
 	</head>
 
 	<body>
@@ -40,6 +39,7 @@
               
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
+<p><img src="images/press-start.jpg" alt="" /></p>
 
 
                 </section>
@@ -95,7 +95,7 @@
                 <section "">
                   <!-- _S9SLIDE_ -->
 <h1>The good <br/>old days</h1>
-<h2>Not really</h2>
+<p class="fragment">Not really</p>
 
                 </section>
               
@@ -195,9 +195,10 @@
                   <p><!-- _S9SLIDE_  --></p>
 <h2>History</h2>
 <ul>
-	<li>No full page reloads</li>
-	<li>Push state (where available)</li>
+	<li>Routes handling</li>
 	<li>Back button keeps working</li>
+	<li>Push state (where available)</li>
+	<li>No full page reloads</li>
 </ul>
 
                 </section>
@@ -308,15 +309,13 @@ Previous version was 1.5 years in development.</p>
 	<li>Thorax</li>
 </ul>
 
-
                 </section>
               
             
               
                 <section "">
-                  <!-- _S9SLIDE_ -->
-<h1>Marionette JS</h1>
-<h2>What makes Marionette a good choice?</h2>
+                  <p><!-- _S9SLIDE_  --></p>
+<p><img src="images/marionette-logo.png" class="no-border"/></p>
 
                 </section>
               
@@ -324,7 +323,7 @@ Previous version was 1.5 years in development.</p>
               
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
-<h2>Dancing applications are awesome</h2>
+<h2>What makes Marionette a good choice?</h2>
 
                 </section>
               
@@ -348,9 +347,7 @@ Previous version was 1.5 years in development.</p>
               
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
-<h2>Memory and events management</h2>
-<p><img src="images/zombie-buster.png" alt="" /></p>
-<p><small>Good bye zombies</small></p>
+<p><img src="images/clean-code.jpg" alt="" /></p>
 
                 </section>
               
@@ -362,8 +359,30 @@ Previous version was 1.5 years in development.</p>
 <ul>
 	<li>Layouts</li>
 	<li>Region Manager</li>
-	<li>Collection/Composite Views</li>
-	<li>Item Views</li>
+	<li>Collection/Composite View</li>
+	<li>ItemView</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Memory and events management</h2>
+<p><img src="images/zombie-buster.png" alt="" /></p>
+<p><small class="fragment">Good bye zombies</small></p>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h2>Modules</h2>
+<ul>
+	<li>Application structuring</li>
+	<li>Promotes modularity and encapsulation</li>
 </ul>
 
                 </section>
@@ -373,6 +392,9 @@ Previous version was 1.5 years in development.</p>
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
 <h2>Controllers</h2>
+<ul>
+	<li>General purpouse coordinators</li>
+</ul>
 
                 </section>
               
@@ -381,11 +403,49 @@ Previous version was 1.5 years in development.</p>
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
 <h2>Event buses</h2>
-<ul>
-	<li>Commands</li>
-	<li>Requests</li>
-	<li>Pub/sub</li>
-</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h3>Commands</h3>
+<pre><code class="javascript">App.commands.setHandler("log:request", function(request){
+  console.log(request);
+});
+
+// Somewhere else
+App.execute("log:request", request);
+</code></pre>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h3>Requests</h3>
+<pre><code class="javascript">App.reqres.setHandler("foo", function(bar){
+  return bar + "-quux";
+});
+
+App.request("foo", "baz"); // =&gt; returns "baz-quux"
+</code></pre>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<h3>Pub/sub</h3>
+<pre><code class="javascript">vent.on("foo", function(){
+  console.log("foo event");
+});
+
+vent.trigger("foo"); // =&gt; "foo event" appears in console
+</code></pre>
 
                 </section>
               
@@ -411,7 +471,7 @@ Previous version was 1.5 years in development.</p>
 };
 
 Backbone.Marionette.AppRouter.extend({
-  controller: someController
+  controller: someController,
   appRoutes: {
     "foo": "someMethod"
   }
@@ -457,7 +517,7 @@ Backbone.Marionette.AppRouter.extend({
               
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
-<p><img src="images/search.jpg" class="half"/></p>
+<p><img src="images/search.jpg" class=""/></p>
 <ol>
  <li class="fragment">User clicks on facet</li>
  <li class="fragment">View triggers event</li>
@@ -470,7 +530,7 @@ Backbone.Marionette.AppRouter.extend({
               
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
-<p><img src="images/search.jpg" class="half"/></p>
+<p><img src="images/search.jpg" class=""/></p>
 <ol>
  <li class="fragment">User clicks on Profile</li>
  <li class="fragment">View triggers event</li>
@@ -483,10 +543,10 @@ Backbone.Marionette.AppRouter.extend({
               
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
-<p><img src="images/profile.jpg" class="half"/></p>
+<p><img src="images/profile.jpg" class=""/></p>
 <ol>
  <li class="fragment">Profiles app handles the command</li>
- <li class="fragment">Profiles app initializes controller</li>
+ <li class="fragment">It initializes controller</li>
  <li class="fragment">Controller requests profile model and renders the views</li>
 </ol>
 
@@ -501,7 +561,41 @@ Backbone.Marionette.AppRouter.extend({
 	<li>Models and collections contained in one place</li>
 	<li>Events all the way</li>
 	<li>Everything is a promise</li>
+	<li>Only place that instantiates models/collections</li>
 </ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<pre><code class="javascript">// Inside entities/user
+App.reqres.setHandler('user:current:entity', function () {
+  return currentUser;
+});
+
+// Inside users/show/show_controller
+// ...
+currentUser = App.request('user:current:entity');
+</code></pre>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
+<pre><code class="javascript">// Inside entities/search
+App.reqres.setHandler('search:new:entity', function () {
+  return new Search();
+})
+
+// Inside search/new/new_controller
+var newSearch = App.request('search:new:entity');
+var view = new New.SearchFormView({model: newSearch});
+this.layout.mainRegion.show(view)
+</code></pre>
 
                 </section>
               
@@ -519,6 +613,22 @@ Backbone.Marionette.AppRouter.extend({
               
                 <section "">
                   <p><!-- _S9SLIDE_  --></p>
+<h2>Examples</h2>
+<ul>
+	<li>Dropdowns</li>
+	<li>Forms</li>
+	<li>Layouts</li>
+	<li>Modals</li>
+	<li>Tooltips</li>
+	<li>etc</li>
+</ul>
+
+                </section>
+              
+            
+              
+                <section "">
+                  <p><!-- _S9SLIDE_  --></p>
 <h2>Directory structure</h2>
 <p style="float:left;"><img src="images/file_system.png" alt="" /></p>
 <ul>
@@ -528,6 +638,17 @@ Backbone.Marionette.AppRouter.extend({
 	<li>Entities</li>
 	<li>Templates</li>
 </ul>
+
+
+                </section>
+              
+            
+              
+                <section "">
+                  <!-- _S9SLIDE_ -->
+<h1>Thank you</h1>
+<p><img src="images/cat-fail.jpg" alt="" /></p>
+<p><small>Cat picture for presentation completeness</small></p>
 
 
                 </section>
@@ -557,18 +678,18 @@ Backbone.Marionette.AppRouter.extend({
 				center: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				transition: 'fade', //Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
-					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 //					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 //					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'reveal/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
 					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'reveal/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-					// { src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 

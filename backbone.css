@@ -2,6 +2,11 @@
     width: 75%;
 }
 
+.reveal section img.no-border {
+    border: 0;
+    box-shadow: none;
+}
+
 section .right {
     float: right;
 }
