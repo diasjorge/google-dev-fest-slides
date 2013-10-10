@@ -200,6 +200,10 @@ h2. Composite applications
 
 !SLIDE
 
+!images/application_tree.png!
+
+!SLIDE
+
 h2. Structure
 
 !SLIDE
