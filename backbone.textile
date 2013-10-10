@@ -7,7 +7,7 @@ date: 2013-10-11
 
 !images/press-start.jpg!
 
-h1. Architecture for large scale backbone applications
+h1. Architecture for Big Backbone Applications
 
 h1. About us
 
