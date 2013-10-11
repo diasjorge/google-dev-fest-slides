@@ -290,7 +290,7 @@ h2. Real Examples
 
 !SLIDE
 
-<img src="images/search.jpg" class=""/>
+<img src="images/search.jpg" class="half"/>
 
 <ol>
  <li class="fragment">User clicks on facet</li>
@@ -300,7 +300,7 @@ h2. Real Examples
 
 !SLIDE
 
-<img src="images/search.jpg" class=""/>
+<img src="images/search.jpg" class="half"/>
 
 <ol>
  <li class="fragment">User clicks on Profile</li>
@@ -310,7 +310,7 @@ h2. Real Examples
 
 !SLIDE
 
-<img src="images/profile.jpg" class=""/>
+<img src="images/profile.jpg" class="half"/>
 
 <ol>
  <li class="fragment">Profiles app handles the command</li>
