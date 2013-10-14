@@ -148,7 +148,7 @@ Previous version was 1.5 years in development.
 h2. The constraints
 
 * Don't screw up by learning another framework
-* Lots of time preassure
+* Lots of time pressure
 * 80% of team was backend
 
 
@@ -209,7 +209,7 @@ h2. Modules
 
 h2. Controllers
 
-* General purpouse coordinators
+* General purpose coordinators
 
 !SLIDE
 
