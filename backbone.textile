@@ -4,21 +4,9 @@ description: Managing complexity with backbone applications
 date: 2013-10-11
 remote: false
 
-!SLIDE
-
 h1. Architecture for Big Backbone Applications
 
 h1. About us
-
-!SLIDE
-
-h2. Jorge Dias
-
-h3. Tech lead developer at XING
-
-* Twitter: "dias_jorge":http://twitter.com/dias_jorge
-* Github: "@diasjorge":http://github.com/diasjorge
-* Blog: "mrdias.com":http://mrdias.com
 
 !SLIDE
 
@@ -32,13 +20,23 @@ h3. Frontend developer at XING
 
 !SLIDE
 
+h2. Jorge Dias
+
+h3. Software developer at XING
+
+* Twitter: "dias_jorge":http://twitter.com/dias_jorge
+* Github: "@diasjorge":http://github.com/diasjorge
+* Blog: "mrdias.com":http://mrdias.com
+
+!SLIDE
+
 <img src="images/backbone.png" class="no-border"/>
 
 !SLIDE
 
 h2. The good parts
 
-* Restful interface though models and collections
+* Restful interface
 * Lifecycle events for models and collections
 * Data and presentation are separated
 * Routes handling directly on the browser
@@ -51,13 +49,12 @@ h2. The good parts
 h2. The messy parts
 
 * Zombies
-* No clear way to structure your app
+* No clear structure
+* Lots of boilerplate
+* Lacks specialized views
+* Mixed concerns between views and models
 * Setup your own conventions
 * Make your own framework on top
-* Lacks specialized views
-* Repetition
-* Does not have a notion of controllers
-* Mixed concerns between views and models
 
 h1. The Challenge
 
@@ -96,10 +93,6 @@ h2. Documentation
 !SLIDE
 
 h2. Clean understandable code
-
-!SLIDE
-
-!images/clean-code.jpg!
 
 !SLIDE
 
@@ -207,6 +200,62 @@ h2. Real Examples
 
 !SLIDE
 
+h2. Presentation Structure
+
+!SLIDE
+
+<img src="images/profile.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/profile-nav-app.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/profile-profile-app.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/profile-profile-app-call-to-actions.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/profile-profile-app-summary.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/profile-profile-app-summary-dropdown.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/profile-profile-app-navigation.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/profile-profile-app-main-content.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/search.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/search-results-collection.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/search-facets-collection.jpg" class="half"/>
+
+!SLIDE
+
+<img src="images/search-facets-item.jpg" class="half"/>
+
+!SLIDE
+
+h2. Event Handling
+
+!SLIDE
+
 <img src="images/search.jpg" class="half"/>
 
 <ol>
@@ -308,4 +357,4 @@ h1. Thank you
 
 <h1 class="full">
   Q & A
-<h1>
+</h1>
