@@ -1,69 +1,69 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-		<title>Architecture for large scale backbone applications</title>
+    <title>Architecture for large scale backbone applications</title>
 
-		<meta name="description" content="Managing complexity with backbone applications">
-		<meta name="author" content="Jean Carlos Meninno & Jorge Dias">
+    <meta name="description" content="Managing complexity with backbone applications">
+    <meta name="author" content="Jean Carlos Meninno & Jorge Dias">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="reveal/css/reveal.min.css">
-		<link rel="stylesheet" href="reveal/css/theme/serif.css" id="theme">
+    <link rel="stylesheet" href="reveal/css/reveal.min.css">
+    <link rel="stylesheet" href="reveal/css/theme/serif.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="reveal/lib/css/solarized-light.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="reveal/lib/css/solarized-light.css">
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+     document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-                <link rel="stylesheet" href="backbone.css">
-	</head>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="backbone.css" media="all">
+  </head>
 
-	<body>
+  <body>
 
-		<div class="reveal">
-          <div class="slides">
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+    <div class="reveal">
+      <div class="slides">
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 
 
-                </section>
-              
-            
-              
-                <section "">
-                  <!-- _S9SLIDE_ -->
+            </section>
+          
+        
+          
+            <section class="">
+              <!-- _S9SLIDE_ -->
 <h1>Architecture for Big Backbone Applications</h1>
 
 
-                </section>
-              
-            
-              
-                <section "">
-                  <!-- _S9SLIDE_ -->
+            </section>
+          
+        
+          
+            <section class="">
+              <!-- _S9SLIDE_ -->
 <h1>About us</h1>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Jorge Dias</h2>
 <h3>Tech lead developer at XING</h3>
 <ul>
@@ -72,12 +72,12 @@
 	<li>Blog: <a href="http://mrdias.com">mrdias.com</a></li>
 </ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Jean Carlos Meninno</h2>
 <h3>Frontend developer at XING</h3>
 <ul>
@@ -86,221 +86,79 @@
 	<li>Blog: <a href="http://meninno.com">meninno.com</a></li>
 </ul>
 
-
-                </section>
-              
-            
-              
-                <section "">
-                  <!-- _S9SLIDE_ -->
-<h1>The good <br/>old days</h1>
-<p class="fragment">Not really</p>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>Browser wars</h2>
-<ul>
-	<li>Incompatible versions</li>
-	<li>Global space pollution</li>
-	<li>Javascript events in the html</li>
-</ul>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>jQuery and others</h2>
-<ul>
-	<li>Browser inconsistencies abstracted</li>
-	<li>Lots of plugins but often incompatible</li>
-	<li>Ad-hoc AJAX handling</li>
-	<li>Lack of client side templating</li>
-</ul>
-
-
-                </section>
-              
-            
-              
-                <section "">
-                  <!-- _S9SLIDE_ -->
-<h1>Modern <br/>development</h1>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>MV* &#8211; Backbone and friends</h2>
-<ul>
-	<li>Modular structure</li>
-	<li>Communication through events</li>
-	<li>Consistent interface to backend</li>
-</ul>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <p><img src="images/backbone.png" class="no-border"/></p>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>The good parts</h2>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>Models and collections</h2>
 <ul>
-	<li>Restful interface</li>
+	<li>Restful interface though models and collections</li>
+	<li>Lifecycle events for models and collections</li>
 	<li>Data and presentation are separated</li>
-	<li>Lifecycle events</li>
-</ul>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>Views</h2>
-<ul>
-	<li>Easy handling of dom events</li>
-	<li>React to model/collection events</li>
-</ul>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>History</h2>
-<ul>
-	<li>Routes handling</li>
-	<li>Back button keeps working</li>
-	<li>Push state (where available)</li>
-	<li>No full page reloads</li>
-</ul>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>Others</h2>
-<ul>
+	<li>Routes handling directly on the browser</li>
 	<li>Not opinionated</li>
-	<li>underscore integration</li>
-	<li>jQuery integration</li>
 	<li>Fits into existent projects</li>
 	<li>Small footprint</li>
 </ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>The messy parts</h2>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>Zombies</h2>
-<p><img src="images/zombies.jpg" alt="" /></p>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>Types of zombies</h2>
 <ul>
-	<li>Events</li>
-	<li>Views</li>
-</ul>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>Not a framework</h2>
-<ul>
-	<li>Setup your own conventions</li>
+	<li>Zombies</li>
 	<li>No clear way to structure your app</li>
-	<li>Lacks specialized views</li>
+	<li>Setup your own conventions</li>
 	<li>Make your own framework on top</li>
-</ul>
-
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
-<h2>Others</h2>
-<ul>
-	<li>No controllers</li>
+	<li>Lacks specialized views</li>
+	<li>Repetition</li>
+	<li>Does not have a notion of controllers</li>
 	<li>Mixed concerns between views and models</li>
-	<li>Huge routers</li>
 </ul>
 
 
-                </section>
-              
-            
-              
-                <section "">
-                  <!-- _S9SLIDE_ -->
+            </section>
+          
+        
+          
+            <section class="">
+              <!-- _S9SLIDE_ -->
 <h1>The Challenge</h1>
 <p>Rewrite the whole frontend in 4 months.<br/>
 Previous version was 1.5 years in development.</p>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>The constraints</h2>
 <ul>
 	<li>Don&#8217;t screw up by learning another framework</li>
-	<li>Lots of time preassure</li>
+	<li>Lots of time pressure</li>
 	<li>80% of team was backend</li>
 </ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Alternatives Evaluation</h2>
 <ul>
 	<li>Marionette</li>
@@ -308,52 +166,52 @@ Previous version was 1.5 years in development.</p>
 	<li>Thorax</li>
 </ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <p><img src="images/marionette-logo.png" class="no-border"/></p>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>What makes Marionette a good choice?</h2>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Documentation</h2>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Clean understandable code</h2>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <p><img src="images/clean-code.jpg" alt="" /></p>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Specialized views</h2>
 <ul>
 	<li>Layouts</li>
@@ -362,53 +220,54 @@ Previous version was 1.5 years in development.</p>
 	<li>ItemView</li>
 </ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Memory and events management</h2>
-<p><img src="images/zombie-buster.png" alt="" /></p>
-<p><small class="fragment">Good bye zombies</small></p>
+<ul>
+	<li>Good bye zombie</li>
+</ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Modules</h2>
 <ul>
 	<li>Application structuring</li>
 	<li>Promotes modularity and encapsulation</li>
 </ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Controllers</h2>
 <ul>
-	<li>General purpouse coordinators</li>
+	<li>General purpose coordinators</li>
 </ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Event buses</h2>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h3>Commands</h3>
 <pre><code class="javascript">App.commands.setHandler("log:request", function(request){
   console.log(request);
@@ -418,12 +277,12 @@ Previous version was 1.5 years in development.</p>
 App.execute("log:request", request);
 </code></pre>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h3>Requests</h3>
 <pre><code class="javascript">App.reqres.setHandler("foo", function(bar){
   return bar + "-quux";
@@ -432,12 +291,12 @@ App.execute("log:request", request);
 App.request("foo", "baz"); // =&gt; returns "baz-quux"
 </code></pre>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h3>Pub/sub</h3>
 <pre><code class="javascript">vent.on("foo", function(){
   console.log("foo event");
@@ -446,24 +305,24 @@ App.request("foo", "baz"); // =&gt; returns "baz-quux"
 vent.trigger("foo"); // =&gt; "foo event" appears in console
 </code></pre>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>App routers</h2>
 <ul>
 	<li>Router composition</li>
 	<li>Router as configuration</li>
 </ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Example</h2>
 <pre><code class="javascript">someController = {
   someMethod: function(){ /*...*/ }
@@ -478,44 +337,44 @@ Backbone.Marionette.AppRouter.extend({
 </code></pre>
 
 
-                </section>
-              
-            
-              
-                <section "">
-                  <!-- _S9SLIDE_ -->
+            </section>
+          
+        
+          
+            <section class="">
+              <!-- _S9SLIDE_ -->
 <h1>Conventions</h1>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Composite applications</h2>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <p><img src="images/application_tree.png" alt="" /></p>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Real Examples</h2>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <p><img src="images/search.jpg" class="half"/></p>
 <ol>
  <li class="fragment">User clicks on facet</li>
@@ -523,12 +382,12 @@ Backbone.Marionette.AppRouter.extend({
  <li class="fragment">Controller responds updating the search</li>
 </ol>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <p><img src="images/search.jpg" class="half"/></p>
 <ol>
  <li class="fragment">User clicks on Profile</li>
@@ -536,12 +395,12 @@ Backbone.Marionette.AppRouter.extend({
  <li class="fragment">Controller executes command to navigate</li>
 </ol>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <p><img src="images/profile.jpg" class="half"/></p>
 <ol>
  <li class="fragment">Profiles app handles the command</li>
@@ -549,12 +408,12 @@ Backbone.Marionette.AppRouter.extend({
  <li class="fragment">Controller requests profile model and renders the views</li>
 </ol>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Data layer</h2>
 <ul>
 	<li>Models and collections contained in one place</li>
@@ -563,12 +422,12 @@ Backbone.Marionette.AppRouter.extend({
 	<li>Only place that instantiates models/collections</li>
 </ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <pre><code class="javascript">// Inside entities/user
 App.reqres.setHandler('user:current:entity', function () {
   return currentUser;
@@ -579,12 +438,12 @@ App.reqres.setHandler('user:current:entity', function () {
 currentUser = App.request('user:current:entity');
 </code></pre>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <pre><code class="javascript">// Inside entities/search
 App.reqres.setHandler('search:new:entity', function () {
   return new Search();
@@ -596,22 +455,22 @@ var view = new New.SearchFormView({model: newSearch});
 this.layout.mainRegion.show(view)
 </code></pre>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Core specialized classes</h2>
 <p><img src="images/patterns.jpg" alt="" /></p>
 <p>Patterns, patterns and more patterns</p>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="">
+              <p><!-- _S9SLIDE_  --></p>
 <h2>Examples</h2>
 <ul>
 	<li>Dropdowns</li>
@@ -622,14 +481,14 @@ this.layout.mainRegion.show(view)
 	<li>etc</li>
 </ul>
 
-                </section>
-              
-            
-              
-                <section "">
-                  <p><!-- _S9SLIDE_  --></p>
+            </section>
+          
+        
+          
+            <section class="two-columns">
+              <p><!-- _S9SLIDE_  two-columns --></p>
 <h2>Directory structure</h2>
-<p style="float:left;"><img src="images/file_system.png" alt="" /></p>
+<p><img src="images/file_system.png" class="short inline" /></p>
 <ul>
 	<li>Apps</li>
 	<li>Restful structure</li>
@@ -639,60 +498,69 @@ this.layout.mainRegion.show(view)
 </ul>
 
 
-                </section>
-              
-            
-              
-                <section "">
-                  <!-- _S9SLIDE_ -->
+            </section>
+          
+        
+          
+            <section class="">
+              <!-- _S9SLIDE_ -->
 <h1>Thank you</h1>
 <p><img src="images/cat-fail.jpg" alt="" /></p>
 <p><small>Cat picture for presentation completeness</small></p>
 
 
-                </section>
-              
-            
-              
-                <section "">
-                  <!-- _S9SLIDE_ -->
-<h1>Q &amp; A</h1>
-                </section>
-              
-            
-          </div>
-		</div>
+            </section>
+          
+        
+          
+            <section class="">
+              <!-- _S9SLIDE_ -->
+<h1 class="full">
+Q &amp; A
 
-		<script src="reveal/lib/js/head.min.js"></script>
-		<script src="reveal/js/reveal.min.js"></script>
 
-		<script>
+            </section>
+          
+        
+          
+            <section class="">
+              <!-- _S9SLIDE_ -->
+<h1>
+            </section>
+          
+        
+      </div>
+    </div>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+    <script src="reveal/lib/js/head.min.js"></script>
+    <script src="reveal/js/reveal.min.js"></script>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: 'fade', //Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+    <script>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-//					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-//					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					// { src: 'reveal/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'reveal/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+     // Full list of configuration options available here:
+     // https://github.com/hakimel/reveal.js#configuration
+     Reveal.initialize({
+       controls: true,
+       progress: true,
+       history: true,
+       center: true,
 
-		</script>
+       theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+       transition: 'fade', //Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-	</body>
+       // Optional libraries used to extend on reveal.js
+       dependencies: [
+         //                                      { src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         //                                      { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         // { src: 'reveal/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+         { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+         { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+         { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+         { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+         
+       ]
+     });
+
+    </script>
+  </body>
 </html>

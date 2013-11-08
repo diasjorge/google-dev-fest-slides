@@ -2,15 +2,27 @@
     width: 75%;
 }
 
+@media print {
+  .reveal section img.short {
+    height: 450px;
+  }
+}
+
 .reveal section img.no-border {
     border: 0;
     box-shadow: none;
 }
 
-section .right {
-    float: right;
+.two-columns p {
+   display: inline;
+   margin-right: 30px;
 }
 
-section .left {
-    float: left;
+.two-columns ul {
+   margin-left: 30px;
+   vertical-align: top;
+}
+
+.full {
+   height: 700px;
 }

@@ -2,6 +2,7 @@ title: Architecture for large scale backbone applications
 author: Jean Carlos Meninno & Jorge Dias
 description: Managing complexity with backbone applications
 date: 2013-10-11
+remote: false
 
 !SLIDE
 
@@ -29,38 +30,6 @@ h3. Frontend developer at XING
 * Github: "@eth0lo":http://github.com/eth0lo
 * Blog: "meninno.com":http://meninno.com
 
-
-h1. The good <br/>old days
-
-<p class="fragment">Not really</p>
-
-!SLIDE
-
-h2. Browser wars
-
-* Incompatible versions
-* Global space pollution
-* Javascript events in the html
-
-!SLIDE
-
-h2. jQuery and others
-
-* Browser inconsistencies abstracted
-* Lots of plugins but often incompatible
-* Ad-hoc AJAX handling
-* Lack of client side templating
-
-h1. Modern <br/>development
-
-!SLIDE
-
-h2. MV* - Backbone and friends
-
-* Modular structure
-* Communication through events
-* Consistent interface to backend
-
 !SLIDE
 
 <img src="images/backbone.png" class="no-border"/>
@@ -69,37 +38,11 @@ h2. MV* - Backbone and friends
 
 h2. The good parts
 
-!SLIDE
-
-h2. Models and collections
-
-* Restful interface
+* Restful interface though models and collections
+* Lifecycle events for models and collections
 * Data and presentation are separated
-* Lifecycle events
-
-!SLIDE
-
-h2. Views
-
-* Easy handling of dom events
-* React to model/collection events
-
-!SLIDE
-
-h2. History
-
-* Routes handling
-* Back button keeps working
-* Push state (where available)
-* No full page reloads
-
-!SLIDE
-
-h2. Others
-
+* Routes handling directly on the browser
 * Not opinionated
-* underscore integration
-* jQuery integration
 * Fits into existent projects
 * Small footprint
 
@@ -107,36 +50,14 @@ h2. Others
 
 h2. The messy parts
 
-!SLIDE
-
-h2. Zombies
-
-!images/zombies.jpg!
-
-!SLIDE
-
-h2. Types of zombies
-
-* Events
-* Views
-
-!SLIDE
-
-h2. Not a framework
-
-* Setup your own conventions
+* Zombies
 * No clear way to structure your app
-* Lacks specialized views
+* Setup your own conventions
 * Make your own framework on top
-
-!SLIDE
-
-h2. Others
-
-* No controllers
+* Lacks specialized views
+* Repetition
+* Does not have a notion of controllers
 * Mixed concerns between views and models
-* Huge routers
-
 
 h1. The Challenge
 
@@ -193,9 +114,7 @@ h2. Specialized views
 
 h2. Memory and events management
 
-!images/zombie-buster.png!
-
-<small class="fragment">Good bye zombies</small>
+* Good bye zombies
 
 !SLIDE
 
@@ -370,11 +289,10 @@ h2. Examples
 * Tooltips
 * etc
 
-!SLIDE
-
+!SLIDE two-columns
 h2. Directory structure
 
-!<images/file_system.png!
+<img src="images/file_system.png" class="short inline" />
 
 * Apps
 * Restful structure
@@ -388,4 +306,6 @@ h1. Thank you
 
 <small>Cat picture for presentation completeness</small>
 
-h1. Q & A
+<h1 class="full">
+  Q & A
+<h1>
